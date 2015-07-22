@@ -10,5 +10,11 @@ function Sprite(x, y, largura, altura) {
 }
  var bg = new Sprite(0, 0, 600, 600),
  spriteBoneco = new Sprite (610, 55, 100, 125);
+ spriteJogar = new Sprite (622,359,100,150);
 /*ATUALIZANDO...*/
 
+/*
+desenha: function(){
+			spriteBoneco.desenha(711, 402);
+		}
+*/

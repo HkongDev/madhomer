@@ -29,8 +29,8 @@
 	},
 	chao = {
 		y: 550,
-		altura: 50,
-		cor: "#ffdf70",
+		altura: 80,
+		cor: "#474947",
 
 		desenha: function(){
 			ctx.fillStyle = this.cor;
@@ -43,7 +43,7 @@
 		altura: spriteBoneco.altura,
 		largura: spriteBoneco.largura,
 		cor: "#ff4e4e",
-		gravidade: 1.9,
+		gravidade: 1.5,
 		velocidade: 0,
 		forcaDoPulo: 30.0,
 		qntPulos: 0,
@@ -87,7 +87,7 @@
 	 		this._obs.push({
 	 			x: LARGURA,
 	 			//largura: 30 + Math.floor(21 * Math.random()),
-	 			largura: 50,
+	 			largura: 30,
 	 			altura: 30 + Math.floor(130 * Math.random()),
 	 			cor: this.cores[Math.floor(5 * Math.random())]
 	 		});
@@ -202,6 +202,7 @@
 		if (estadoAtual == estados.jogar){
 			ctx.fillStyle = "green";
 			ctx.fillRect(LARGURA / 2 - 50, ALTURA / 2 - 50, 100, 100);
+
 		}
 		else if (estadoAtual == estados.perdeu){
 			ctx.fillStyle = "red";
